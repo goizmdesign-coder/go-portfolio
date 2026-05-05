@@ -1,0 +1,122 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    padding: 24px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    background: #fff;
+    color: #000;
+  }
+  
+  .site-header {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 24px;
+  }
+  
+  .site-header nav {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .home-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+  
+  .home-grid img {
+    width: 100%;
+  }
+  main img {
+    width: 100%;
+    height: auto;
+  }.project-list {
+    display: grid;
+    gap: 4px;
+  }
+  
+  .project-row {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr auto;
+    padding: 8px 0;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .project-row:hover {
+    opacity: 0.5;
+  }
+  .project-row {
+    font-size: 13px;
+    letter-spacing: 0.02em;
+  }
+  .project-row div {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .work-item {
+    position: relative;
+    display: block;
+    overflow: hidden;
+  }
+  
+  .work-item img {
+    width: 100%;
+    display: block;
+  }
+  
+  .work-title {
+    position: absolute;
+    bottom: 40px;
+    left: 20px;
+    color: white;
+    font-size: 14px;
+    opacity: 0;
+    transition: 0.3s;
+    z-index: 2;
+    pointer-events: none;
+  }
+  
+  .work-item:hover .work-title {
+    opacity: 1;
+  }
+  .about {
+    max-width: 600px;
+  }
+  
+  .about h1 {
+    font-size: 30px;      /* h2と同じサイズにする */
+    font-weight: 600;     /* 少しだけ強く */
+    margin-bottom: 24px;
+  }
+  
+  .about h2 {
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    margin-top: 48px;
+  }
+  
+  .about p {
+    margin-bottom: 12px;
+  }
+
+  a {
+    color: #000;
+    text-decoration: none;
+  }
+  main img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 24px;
+  }
+
+  .work-title {
+    white-space: normal;   /* ←これが重要 */
+    line-height: 1.4;
+  }
