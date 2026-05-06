@@ -139,4 +139,8 @@
   .site-header nav {
     gap: 10px;
   }
+
+  .home-grid {
+  grid-template-columns: 1fr;
+}
 }
