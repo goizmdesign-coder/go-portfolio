@@ -120,6 +120,7 @@
     white-space: normal;   /* ←これが重要 */
     line-height: 1.4;
   }
+
   @media (max-width: 600px) {
   body {
     padding: 18px;
@@ -127,15 +128,15 @@
   }
 
   .site-header {
-    font-size: 14px;
-    padding-bottom: 18px;
+    padding-bottom: 20px;
   }
 
   .site-header a {
-    font-size: 14px;
+    font-size: 18px !important;
+    line-height: 1.2;
   }
 
   .site-header nav {
-    gap: 16px;
+    gap: 20px;
   }
 }
