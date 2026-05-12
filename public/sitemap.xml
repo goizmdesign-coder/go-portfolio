@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <url>
+    <loc>https://goizumita.com/</loc>
+  </url>
+
+  <url>
+    <loc>https://goizumita.com/about</loc>
+  </url>
+
+  <url>
+    <loc>https://goizumita.com/projects</loc>
+  </url>
+
+  <url>
+    <loc>https://goizumita.com/projects/disassembly</loc>
+  </url>
+
+  <url>
+    <loc>https://goizumita.com/projects/encounters</loc>
+  </url>
+
+  <url>
+    <loc>https://goizumita.com/projects/revolve</loc>
+  </url>
+
+  <url>
+    <loc>https://goizumita.com/projects/architecture-complexity-mapping</loc>
+  </url>
+
+  <url>
+    <loc>https://goizumita.com/jp</loc>
+  </url>
+
+</urlset>
