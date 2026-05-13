@@ -38,6 +38,13 @@ main {
   margin: 0 auto;
 }
 
+main h1 {
+  font-size: 38px;
+  font-weight: 600;
+  margin-bottom: 24px;
+  line-height: 1;
+}
+
 .home-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -111,12 +118,6 @@ main img {
   margin: 0 auto;
 }
 
-.about h1 {
-  font-size: 38px;
-  font-weight: 600;
-  margin-bottom: 24px;
-}
-
 .about h2 {
   font-size: 15px;
   font-weight: 600;
@@ -187,5 +188,9 @@ a[href^="http"]:hover {
 
   .home-grid {
     grid-template-columns: 1fr;
+  }
+
+  main h1 {
+    font-size: 30px;
   }
 }
