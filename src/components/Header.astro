@@ -1,0 +1,57 @@
+---
+const currentPath = Astro.url.pathname;
+
+const isJP = currentPath.startsWith("/jp");
+
+const jpHref = isJP
+  ? currentPath
+  : currentPath === "/"
+    ? "/jp"
+    : `/jp${currentPath}`;
+
+const enHref = isJP
+  ? currentPath.replace(/^\/jp/, "") || "/"
+  : currentPath;
+
+const aboutHref = isJP ? "/jp/about" : "/about";
+---
+
+<header class="site-header">
+  <a href={isJP ? "/jp" : "/"}>
+    {isJP ? "泉田剛 / Go Izumita" : "Go Izumita / 泉田剛"}
+  </a>
+
+  <nav>
+    <a href="https://goizm.base.shop/" target="_blank">
+      Shop
+    </a>
+
+    <a
+      href="/projects"
+      class={currentPath.includes("/projects") ? "active" : ""}
+    >
+      Projects
+    </a>
+
+    <a
+      href={aboutHref}
+      class={currentPath.includes("/about") ? "active" : ""}
+    >
+      About
+    </a>
+
+    <a
+      href={jpHref}
+      class={isJP ? "active" : ""}
+    >
+      JP
+    </a>
+
+    <a
+      href={enHref}
+      class={!isJP ? "active" : ""}
+    >
+      EN
+    </a>
+  </nav>
+</header>

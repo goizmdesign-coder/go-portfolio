@@ -1,11 +1,10 @@
 ---
 import "../../styles/global.css";
+import Header from "../../components/Header.astro";
 ---
 
 <html lang="ja">
   <head>
-   <link rel="icon" href="/favicon.ico" />
-<link rel="icon" type="image/png" sizes="48x48" href="/favicon.png" />
     <meta charset="utf-8" />
 
     <meta
@@ -38,44 +37,31 @@ import "../../styles/global.css";
       content="https://goizumita.com/images/og.jpg"
     />
 
-    <meta property="og:type" content="website" />
+    <meta
+      property="og:type"
+      content="website"
+    />
 
     <meta
       property="og:url"
       content="https://goizumita.com/jp"
     />
 
-    <link rel="icon" href="/favicon.ico" />
+    <link
+      rel="icon"
+      href="/favicon.ico"
+    />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="48x48"
+      href="/favicon.png"
+    />
   </head>
 
   <body>
-    <header class="site-header">
-      <a href="/jp">
-        泉田剛 / Go Izumita
-      </a>
-
-      <nav>
-        <a href="https://goizm.base.shop/" target="_blank">
-          Shop
-        </a>
-
-        <a href="/projects">
-          Projects
-        </a>
-
-        <a href="/jp/about">
-          About
-        </a>
-
-        <a href="/jp">
-          JP
-        </a>
-
-        <a href="/">
-          EN
-        </a>
-      </nav>
-    </header>
+    <Header />
 
     <main class="home-grid">
       <a

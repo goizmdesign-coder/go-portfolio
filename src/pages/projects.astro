@@ -1,51 +1,154 @@
 ---
 import "../styles/global.css";
+import Header from "../components/Header.astro";
 ---
 
 <html lang="en">
   <head>
-   <link rel="icon" href="/favicon.ico" />
-<link rel="icon" type="image/png" sizes="48x48" href="/favicon.png" />
-    <title>Projects</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+
+    <title>
+      Projects — Go Izumita / 泉田剛
+    </title>
+
+    <meta
+      name="description"
+      content="Projects by Go Izumita / 泉田剛. Sculpture, installation, architecture, media art, and spatial design works."
+    />
+
+    <meta
+      property="og:title"
+      content="Projects — Go Izumita / 泉田剛"
+    />
+
+    <meta
+      property="og:description"
+      content="Projects by Go Izumita"
+    />
+
+    <meta
+      property="og:image"
+      content="https://goizumita.com/images/og.jpg"
+    />
+
+    <meta
+      property="og:type"
+      content="website"
+    />
+
+    <meta
+      property="og:url"
+      content="https://goizumita.com/projects"
+    />
+
+    <link
+      rel="icon"
+      href="/favicon.ico"
+    />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="48x48"
+      href="/favicon.png"
+    />
   </head>
+
   <body>
-    <header class="site-header">
-  <a href="/">Go Izumita</a>
-  <nav>
-  <a href="https://goizm.base.shop/" target="_blank">Shop</a>
-    <a href="/about">About</a>
-  </nav>
-</header>
+    <Header />
 
     <main class="project-list">
-  <a href="/projects/disassembly" class="project-row">
-    <div>Deconstruction and Memory</div>
-    <div>Sculpture, Installation</div>
-    <div>Aomori Museum of Art</div>
-    <div>2025</div>
-  </a>
+      <a
+        href="/projects/disassembly"
+        class="project-row"
+      >
+        <div>
+          Deconstruction and Memory
+        </div>
 
-  <a href="/projects/encounters" class="project-row">
-    <div>ENCOUNTERS</div>
-    <div>Media Art, Exhibition</div>
-    <div>TODA HALL & CONFERENCE TOKYO</div>
-    <div>2026</div>
-  </a>
+        <div>
+          Sculpture, Installation
+        </div>
 
-  <a href="/projects/architecture-complexity-mapping" class="project-row">
-   <div>Architecture Complexity Mapping Patterns of Architecture</div>
-    <div>Research, Architecture</div>
-    <div>Musashino Art Univercity</div>
-    <div>2024</div>
-  </a>
+        <div>
+          Aomori Museum of Art
+        </div>
 
-  <a href="/projects/revolve" class="project-row">
-    <div>R/EVOLVE</div>
-    <div>Stage design and construction</div>
-    <div>Musashino Art Univercity</div>
-    <div>2023</div>
-  </a>
-</main>
+        <div>
+          2025
+        </div>
+      </a>
+
+      <a
+        href="/projects/encounters"
+        class="project-row"
+      >
+        <div>
+          ENCOUNTERS
+        </div>
+
+        <div>
+          Media Art, Exhibition
+        </div>
+
+        <div>
+          TODA HALL & CONFERENCE TOKYO
+        </div>
+
+        <div>
+          2026
+        </div>
+      </a>
+
+      <a
+        href="/projects/architecture-complexity-mapping"
+        class="project-row"
+      >
+        <div>
+          Architecture Complexity
+          Mapping Patterns of
+          Architecture
+        </div>
+
+        <div>
+          Research, Architecture
+        </div>
+
+        <div>
+          Musashino Art University
+        </div>
+
+        <div>
+          2024
+        </div>
+      </a>
+
+      <a
+        href="/projects/revolve"
+        class="project-row"
+      >
+        <div>
+          R/EVOLVE
+        </div>
+
+        <div>
+          Stage Design and
+          Construction
+        </div>
+
+        <div>
+          Musashino Art University
+        </div>
+
+        <div>
+          2023
+        </div>
+      </a>
+    </main>
   </body>
 </html>

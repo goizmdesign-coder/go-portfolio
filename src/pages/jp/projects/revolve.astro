@@ -1,12 +1,10 @@
 ---
 import "../../../styles/global.css";
+import Header from "../../../components/Header.astro";
 ---
 
 <html lang="ja">
   <head>
-   <link rel="icon" href="/favicon.ico" />
-<link rel="icon" type="image/png" sizes="48x48" href="/favicon.png" />
-
     <meta charset="utf-8" />
 
     <meta
@@ -15,56 +13,127 @@ import "../../../styles/global.css";
     />
 
     <title>
-R/EVOLVE — 泉田剛 / Go Izumita
-</title>
+      R/EVOLVE — 泉田剛 / Go Izumita
+    </title>
 
     <meta
       name="description"
       content="武蔵野美術大学電子音楽研究会での活動を通して制作した、ステージデザインおよび空間設計プロジェクト。"
     />
 
-    <link rel="icon" href="/favicon.ico" />
+    <meta
+      property="og:title"
+      content="R/EVOLVE — 泉田剛 / Go Izumita"
+    />
+
+    <meta
+      property="og:description"
+      content="Stage Design and Spatial Installation Project"
+    />
+
+    <meta
+      property="og:image"
+      content="https://goizumita.com/images/revolve-1.jpg"
+    />
+
+    <meta
+      property="og:type"
+      content="website"
+    />
+
+    <meta
+      property="og:url"
+      content="https://goizumita.com/jp/projects/revolve"
+    />
+
+    <link
+      rel="icon"
+      href="/favicon.ico"
+    />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="48x48"
+      href="/favicon.png"
+    />
   </head>
 
   <body>
-    <header class="site-header">
-      <a href="/jp">Go Izumita</a>
+    <Header />
 
-      <nav>
-      <a href="https://goizm.base.shop/" target="_blank">Shop</a>
-        <a href="/projects">Projects</a>
-        <a href="/jp/about">About</a>
-
-        <a href="/jp/projects/revolve">JP</a>
-        <a href="/projects/revolve">EN</a>
-      </nav>
-    </header>
-
-    <main style="max-width: 800px;">
-      <h1>R/EVOLVE</h1>
+    <main>
+      <h1>
+        R/EVOLVE
+      </h1>
 
       <p>
-        武蔵野美術大学電子音楽研究会での活動を通して行った、ステージ空間の設計・施工プロジェクト。
+        武蔵野美術大学電子音楽研究会
+        での活動を通して行った、
+        ステージ空間の設計・施工
+        プロジェクト。
       </p>
 
       <p>
-        ステージを会場中央に配置することで、パフォーマンスを一方向から鑑賞するものではなく、あらゆる方向から体験できる空間へと変換した。観客、演者、音響、映像が相互に呼応しながら、一体化していく没入的な環境を生み出している。
+        ステージを会場中央に配置
+        することで、パフォーマンス
+        を一方向から鑑賞するもの
+        ではなく、あらゆる方向から
+        体験できる空間へと変換した。
       </p>
 
       <p>
-        本プロジェクトは、大型の映像投影壁や円形スクリーンを用いた初期の実験を経て発展し、最終的には全長約21m、7:1という極端なアスペクト比を持つ巨大曲面スクリーンの設計・施工へと至った。
+        観客、演者、音響、映像が
+        相互に呼応しながら、一体化
+        していく没入的な環境を
+        生み出している。
       </p>
 
       <p>
-        モジュール化された構築システムと、実際に手を動かしながら行う施工プロセスを通して、建築、映像、音響、そして集団的な空間体験の新たな関係性を探求している。
+        本プロジェクトは、大型の
+        映像投影壁や円形スクリーン
+        を用いた初期の実験を経て
+        発展し、最終的には全長約
+        21m、7:1という極端な
+        アスペクト比を持つ巨大
+        曲面スクリーンの設計・施工
+        へと至った。
       </p>
 
-      <img src="/images/revolve-1.jpg" />
-      <img src="/images/revolve-2.jpg" />
-      <img src="/images/revolve-3.jpg" />
-      <img src="/images/revolve-4.jpg" />
+      <p>
+        モジュール化された構築
+        システムと、実際に手を
+        動かしながら行う施工
+        プロセスを通して、建築、
+        映像、音響、そして集団的
+        な空間体験の新たな関係性
+        を探求している。
+      </p>
 
-      <img src="/images/revolve-mov.gif" />
+      <img
+        src="/images/revolve-1.jpg"
+        alt="R/EVOLVE — 泉田剛"
+      />
+
+      <img
+        src="/images/revolve-2.jpg"
+        alt="R/EVOLVE installation view"
+      />
+
+      <img
+        src="/images/revolve-3.jpg"
+        alt="R/EVOLVE installation view"
+      />
+
+      <img
+        src="/images/revolve-4.jpg"
+        alt="R/EVOLVE installation view"
+      />
+
+      <img
+        src="/images/revolve-mov.gif"
+        alt="R/EVOLVE animation"
+      />
     </main>
   </body>
 </html>
