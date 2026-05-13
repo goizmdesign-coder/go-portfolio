@@ -1,3 +1,20 @@
+---
+const currentPath = Astro.url.pathname;
+
+const isJP = currentPath.startsWith("/jp");
+
+const jpHref = isJP
+  ? currentPath
+  : currentPath === "/"
+    ? "/jp"
+    : `/jp${currentPath}`;
+
+const enHref = isJP
+  ? currentPath.replace(/^\/jp/, "") || "/"
+  : currentPath;
+
+const aboutHref = isJP ? "/jp/about" : "/about";
+---
 <header class="site-header">
   <a href={isJP ? "/jp" : "/"}>
     GO IZUMITA
