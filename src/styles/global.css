@@ -196,3 +196,22 @@ a[href^="mailto"]:hover {
     font-size: 30px;
   }
 }
+
+.site-footer {
+  position: fixed;
+  bottom: 24px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2000;
+}
+
+.site-footer a {
+  color: blue;
+  font-weight: 700;
+  text-decoration: underline;
+  text-underline-offset: 0.12em;
+}
+
+.site-footer a:hover {
+  opacity: 0.7;
+}
