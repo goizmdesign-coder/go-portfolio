@@ -14,20 +14,23 @@ const enHref = isJP
   : currentPath;
 
 const aboutHref = isJP ? "/jp/about" : "/about";
+
+const projectsHref = isJP
+  ? "/jp/projects"
+  : "/projects";
 ---
+
 <header class="site-header">
   <a href={isJP ? "/jp" : "/"}>
     GO IZUMITA
   </a>
 
   <nav>
-    <a href="https://goizm.base.shop/" target="_blank">Store</a>
-
     <a
-      href="/projects"
+      href={projectsHref}
       class={currentPath.includes("/projects") ? "active" : ""}
     >
-      Projects List
+      Projects
     </a>
 
     <a
