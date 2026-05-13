@@ -133,7 +133,7 @@ a {
 /* 外部リンクだけ青 */
 
 a[href^="http"] {
-  color: #0066cc;
+  color: blue;
 }
 
 a[href^="http"]:hover {
