@@ -130,7 +130,18 @@ a {
   text-underline-offset: 0.12em;
 }
 
+/* 外部リンクだけ青 */
+
+a[href^="http"] {
+  color: #0066cc;
+}
+
+a[href^="http"]:hover {
+  opacity: 0.7;
+}
+
 /* 今いるページのボタンを青くする */
+
 .active {
   color: blue !important;
 }
