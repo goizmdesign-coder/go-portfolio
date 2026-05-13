@@ -23,11 +23,19 @@ body {
   padding-bottom: 24px;
 
   background: transparent;
+
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .site-header nav {
   display: flex;
   gap: 20px;
+}
+
+main {
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 .home-grid {
@@ -101,6 +109,7 @@ main img {
 
 .about {
   max-width: 600px;
+  margin: 0 auto;
 }
 
 .about h1 {
