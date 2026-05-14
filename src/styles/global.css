@@ -94,11 +94,6 @@ main img {
 
 .work-item img {
   display: block;
-  transition: opacity 0.3s;
-}
-
-.work-item:hover img {
-  opacity: 0.88;
 }
 
 .work-title {
@@ -111,7 +106,7 @@ main img {
 
   font-size: 50px;
   font-weight: 700;
-  line-height: 1.1;
+  line-height: 0.9;
 
   opacity: 0;
   transition: 0.3s;
