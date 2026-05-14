@@ -261,3 +261,8 @@ a[href^="mailto"]:hover {
   display: block;
   margin-top: 50px !important;
 }
+
+.principle {
+  display: block;
+  margin-top: 80px !important;
+}
