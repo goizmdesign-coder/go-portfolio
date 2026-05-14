@@ -207,6 +207,41 @@ import Footer from "../../components/Footer.astro";
         src="/images/Aomori-13.jpg"
         alt="Deconstruction and Memory installation view"
       />
+      <a
+  href="#"
+  class="next-project"
+  id="random-next"
+>
+  NEXT
+</a>
+
+<script>
+  const projects = [
+    "/projects/disassembly",
+    "/projects/encounters",
+    "/projects/architecture-complexity-mapping",
+    "/projects/revolve"
+  ];
+
+  const current =
+    window.location.pathname;
+
+  const filtered =
+    projects.filter(
+      (p) => p !== current
+    );
+
+  const random =
+    filtered[
+      Math.floor(
+        Math.random() * filtered.length
+      )
+    ];
+
+  document
+    .getElementById("random-next")
+    .href = random;
+</script>
     </main>
     <Footer />
   </body>

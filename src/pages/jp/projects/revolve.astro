@@ -112,6 +112,41 @@ import Footer from "../../../components/Footer.astro";
         src="/images/revolve-mov.gif"
         alt="R/EVOLVE animation"
       />
+      <a
+  href="#"
+  class="next-project"
+  id="random-next"
+>
+  NEXT
+</a>
+
+<script>
+  const projects = [
+    "/jp/projects/disassembly",
+    "/jp/projects/encounters",
+    "/jp/projects/architecture-complexity-mapping",
+    "/jp/projects/revolve"
+  ];
+
+  const current =
+    window.location.pathname;
+
+  const filtered =
+    projects.filter(
+      (p) => p !== current
+    );
+
+  const random =
+    filtered[
+      Math.floor(
+        Math.random() * filtered.length
+      )
+    ];
+
+  document
+    .getElementById("random-next")
+    .href = random;
+</script>
     </main>
     <Footer />
   </body>

@@ -168,6 +168,26 @@ a[href^="mailto"]:hover {
   height: 100%;
 }
 
+/* NEXT button */
+
+.next-project {
+  display: inline-block;
+  margin-top: 80px;
+  margin-bottom: 120px;
+
+  color: blue !important;
+
+  font-size: 18px;
+  font-weight: 700;
+
+  text-decoration: underline;
+  text-underline-offset: 0.12em;
+}
+
+.next-project:hover {
+  opacity: 0.7;
+}
+
 @media (max-width: 600px) {
   body {
     padding: 18px;
@@ -195,6 +215,10 @@ a[href^="mailto"]:hover {
   main h1 {
     font-size: 30px;
   }
+
+  .next-project {
+    font-size: 16px;
+  }
 }
 
 .site-footer {
@@ -208,7 +232,7 @@ a[href^="mailto"]:hover {
 .site-footer a {
   color: blue;
   font-weight: 700;
-  font-size:20px;
+  font-size: 20px;
   text-decoration: underline;
   text-underline-offset: 0.12em;
 }
