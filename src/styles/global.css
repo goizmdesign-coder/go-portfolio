@@ -171,17 +171,25 @@ a[href^="mailto"]:hover {
 /* NEXT button */
 
 .next-project {
-  display: inline-block;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+
+  display: block;
+  width: fit-content;
+
   margin-top: 80px;
   margin-bottom: 120px;
 
-  color: blue !important;
+  color: #000 !important;
 
   font-size: 18px;
   font-weight: 700;
 
   text-decoration: underline;
   text-underline-offset: 0.12em;
+
+  text-align: center;
 }
 
 .next-project:hover {
