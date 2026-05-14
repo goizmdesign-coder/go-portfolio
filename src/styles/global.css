@@ -183,7 +183,6 @@ a[href^="mailto"]:hover {
 
   color: #000 !important;
 
-  font-size: 18px;
   font-weight: 700;
 
   text-decoration: underline;
@@ -222,10 +221,6 @@ a[href^="mailto"]:hover {
 
   main h1 {
     font-size: 30px;
-  }
-
-  .next-project {
-    font-size: 16px;
   }
 }
 
