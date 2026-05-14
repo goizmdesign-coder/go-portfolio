@@ -89,10 +89,16 @@ main img {
   position: relative;
   display: block;
   overflow: hidden;
+  background: #fff;
 }
 
 .work-item img {
   display: block;
+  transition: opacity 0.3s;
+}
+
+.work-item:hover img {
+  opacity: 0.88;
 }
 
 .work-title {
@@ -101,7 +107,7 @@ main img {
   left: 20px;
   right: 20px;
 
-  color: white;
+  color: #000;
 
   font-size: 50px;
   font-weight: 700;
@@ -229,6 +235,10 @@ a[href^="mailto"]:hover {
 
   main h1 {
     font-size: 30px;
+  }
+
+  .work-title {
+    font-size: 36px;
   }
 }
 
