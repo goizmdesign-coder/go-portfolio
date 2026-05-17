@@ -104,7 +104,7 @@ main img {
 
   color: #000;
 
-  font-size: 30px;
+  font-size: 15px;
   font-weight: 700;
   line-height: 0.9;
 
@@ -233,7 +233,7 @@ a[href^="mailto"]:hover {
   }
 
   .work-title {
-    font-size: 36px;
+    font-size: 15px;
   }
 }
 
