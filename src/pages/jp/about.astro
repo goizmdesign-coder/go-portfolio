@@ -321,6 +321,42 @@ import Footer from "../../components/Footer.astro";
       設計や制作、実装を行い、プロジェクトを実現します。
       </p>
 
+      <a
+  href="#"
+  class="next-project"
+  id="random-next"
+>
+  Next Project
+</a>
+
+<script>
+  const projects = [
+    "/projects/disassembly",
+    "/projects/encounters",
+    "/projects/architecture-complexity-mapping",
+    "/projects/revolve"
+  ];
+
+  const current =
+    window.location.pathname;
+
+  const filtered =
+    projects.filter(
+      (p) => p !== current
+    );
+
+  const random =
+    filtered[
+      Math.floor(
+        Math.random() * filtered.length
+      )
+    ];
+
+  document
+    .getElementById("random-next")
+    .href = random;
+</script>
+
 
     </main>
     <Footer />
