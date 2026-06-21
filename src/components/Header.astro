@@ -1,11 +1,14 @@
+
 ---
-const currentPath = Astro.url.pathname;
+const currentPath =
+  Astro.url.pathname.replace(/\/+$/, "") || "/";
 
 const isSharedTextPage =
-  currentPath === "/text" ||
-  currentPath === "/jp/text";
+  currentPath === "/text";
 
-const isJP = currentPath.startsWith("/jp");
+const isJP =
+  currentPath === "/jp" ||
+  currentPath.startsWith("/jp/");
 
 const jpHref = isSharedTextPage
   ? "/text"
@@ -65,3 +68,4 @@ const projectsHref = isJP
     </a>
   </nav>
 </header>
+
