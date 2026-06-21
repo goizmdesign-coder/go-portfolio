@@ -240,17 +240,31 @@ a[href^="mailto"]:hover {
 .site-footer {
   position: fixed;
   bottom: 24px;
-  left: 50%;
-  transform: translateX(-50%);
+  left: 0;
+  width: 100%;
+  height: 24px;
   z-index: 2000;
+  pointer-events: none;
 }
 
 .site-footer a {
-  color: blue;
+  position: absolute;
   font-weight: 700;
   font-size: 20px;
   text-decoration: underline;
   text-underline-offset: 0.12em;
+  pointer-events: auto;
+}
+
+.store-link {
+  left: 50%;
+  transform: translateX(-50%);
+  color: blue;
+}
+
+.text-link {
+  right: 24px;
+  color: black;
 }
 
 .site-footer a:hover {

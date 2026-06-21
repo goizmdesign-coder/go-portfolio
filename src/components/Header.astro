@@ -1,19 +1,29 @@
 ---
 const currentPath = Astro.url.pathname;
 
+const isSharedTextPage =
+  currentPath === "/text" ||
+  currentPath === "/jp/text";
+
 const isJP = currentPath.startsWith("/jp");
 
-const jpHref = isJP
-  ? currentPath
-  : currentPath === "/"
-    ? "/jp"
-    : `/jp${currentPath}`;
+const jpHref = isSharedTextPage
+  ? "/text"
+  : isJP
+    ? currentPath
+    : currentPath === "/"
+      ? "/jp"
+      : `/jp${currentPath}`;
 
-const enHref = isJP
-  ? currentPath.replace(/^\/jp/, "") || "/"
-  : currentPath;
+const enHref = isSharedTextPage
+  ? "/text"
+  : isJP
+    ? currentPath.replace(/^\/jp/, "") || "/"
+    : currentPath;
 
-const aboutHref = isJP ? "/jp/about" : "/about";
+const aboutHref = isJP
+  ? "/jp/about"
+  : "/about";
 
 const projectsHref = isJP
   ? "/jp/projects"
@@ -42,14 +52,14 @@ const projectsHref = isJP
 
     <a
       href={jpHref}
-      class={isJP ? "active" : ""}
+      class={!isSharedTextPage && isJP ? "active" : ""}
     >
       JP
     </a>
 
     <a
       href={enHref}
-      class={!isJP ? "active" : ""}
+      class={!isSharedTextPage && !isJP ? "active" : ""}
     >
       EN
     </a>
