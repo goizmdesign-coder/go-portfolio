@@ -1,0 +1,288 @@
+---
+import "../../styles/global.css";
+import Header from "../../components/Header.astro";
+import Footer from "../../components/Footer.astro";
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+
+    <title>
+      Africaya Renovation — Go Izumita / 泉田剛
+    </title>
+
+    <meta
+      name="description"
+      content="Renovation proposal for an existing wooden signboard-style building, combining a three-generation residence, African textile shop, guesthouse, community space, and dance studio."
+    />
+
+    <meta
+      property="og:title"
+      content="Africaya Renovation — Go Izumita / 泉田剛"
+    />
+
+    <meta
+      property="og:description"
+      content="Architectural Renovation Proposal"
+    />
+
+    <meta
+      property="og:image"
+      content="https://goizumita.com/images/africa-1.jpg"
+    />
+
+    <meta
+      property="og:type"
+      content="website"
+    />
+
+    <meta
+      property="og:url"
+      content="https://goizumita.com/projects/africaya-renovation"
+    />
+
+    <link
+      rel="icon"
+      href="/favicon.ico"
+    />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="48x48"
+      href="/favicon.png"
+    />
+  </head>
+
+  <body>
+    <Header />
+
+    <main>
+      <h1>
+        Africaya Renovation
+      </h1>
+
+      <p>
+        Renovation proposal for a
+        signboard-style wooden house
+        renovated and extended in 1956.
+      </p>
+
+      <p>
+        The project was conceived as a
+        three-generation house and a
+        space for an African community,
+        combining a textile shop,
+        residence, guesthouse,
+        community space, dance studio,
+        and other shared functions
+        within a single existing
+        building.
+      </p>
+
+      <p>
+        The proposal reconsiders the
+        identity of the existing
+        building through three
+        architectural elements:
+        foundation, facade, and
+        furniture.
+      </p>
+
+      <p>
+        Granary and Stone Foundation.
+        The existing timber structure
+        is reinforced and lifted using
+        traditional ageya
+        building-lifting techniques.
+        The existing foundations are
+        removed, and the building is
+        reconstructed using a
+        traditional ishibadate stone
+        foundation system.
+      </p>
+
+      <p>
+        The idea refers to African
+        granaries and their relationship
+        to stones and the ground,
+        connecting the construction
+        method with the spatial and
+        cultural context of Africaya.
+      </p>
+
+      <p>
+        Textile and Facade.
+        The new facade is made from
+        perforated metal based on
+        textile patterns sold at
+        Africaya.
+        By translating African textile
+        patterns into an architectural
+        surface, the proposal
+        reinterprets and expands the
+        characteristic signage facade
+        of the existing building in a
+        contemporary way.
+      </p>
+
+      <p>
+        Furniture and Freedom.
+        Despite the limited floor area,
+        the building accommodates a
+        wide range of programs,
+        including a three-generation
+        residence, shop, guesthouse,
+        community space, and dance
+        studio.
+      </p>
+
+      <p>
+        Rather than dividing the
+        interior into fixed rooms,
+        the proposal creates an open
+        and flexible space defined
+        primarily by movable furniture.
+        Rearranging these elements
+        allows the same interior to
+        adapt to different activities,
+        occupants, and relationships.
+      </p>
+
+      <p>
+        Academic project from the
+        Department of Architecture at
+        Musashino Art University, 2022.
+        Assignment: Akira Suzuki Seminar.
+        Supervision: Gross Studio.
+      </p>
+
+      <img
+        src="/images/africa-4.png"
+        alt="Africaya Renovation"
+      />
+
+      <img
+        src="/images/africa-1.jpg"
+        alt="Africaya Renovation — Go Izumita"
+      />
+
+      <img
+        src="/images/africa-2.png"
+        alt="Africaya Renovation"
+      />
+
+      <img
+        src="/images/africa-3.jpg"
+        alt="Africaya Renovation"
+      />
+
+      
+
+      <img
+        src="/images/africa-5.png"
+        alt="Africaya Renovation"
+      />
+
+      <img
+        src="/images/africa-6.png"
+        alt="Africaya Renovation"
+      />
+
+      <img
+        src="/images/africa-7.png"
+        alt="Africaya Renovation"
+      />
+
+      <img
+        src="/images/africa-8.png"
+        alt="Africaya Renovation"
+      />
+
+      <img
+        src="/images/africa-11.png"
+        alt="アフリカ屋のリノベーション"
+      />
+
+      <img
+        src="/images/africa-12.png"
+        alt="アフリカ屋のリノベーション"
+      />
+
+      <img
+        src="/images/africa-13.png"
+        alt="アフリカ屋のリノベーション"
+      />
+
+      <img
+        src="/images/africa-9.png"
+        alt="アフリカ屋のリノベーション"
+      />
+
+      <img
+        src="/images/africa-17.png"
+        alt="アフリカ屋のリノベーション"
+      />
+      
+      <img
+        src="/images/africa-15.png"
+        alt="アフリカ屋のリノベーション"
+      />
+
+      <img
+        src="/images/africa-16.png"
+        alt="アフリカ屋のリノベーション"
+      />
+
+      <img
+        src="/images/africa-14.png"
+        alt="アフリカ屋のリノベーション"
+      />
+
+      <a
+        href="#"
+        class="next-project"
+        id="random-next"
+      >
+        Next Project
+      </a>
+
+      <script>
+        const projects = [
+          "/projects/disassembly",
+          "/projects/encounters",
+          "/projects/architecture-complexity-mapping",
+          "/projects/revolve",
+          "/projects/africaya-renovation"
+        ];
+
+        const current =
+          window.location.pathname;
+
+        const filtered =
+          projects.filter(
+            (p) => p !== current
+          );
+
+        const random =
+          filtered[
+            Math.floor(
+              Math.random() * filtered.length
+            )
+          ];
+
+        document
+          .getElementById("random-next")
+          .href = random;
+      </script>
+    </main>
+
+    <Footer />
+  </body>
+</html>
