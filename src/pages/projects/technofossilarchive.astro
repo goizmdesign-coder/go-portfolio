@@ -138,40 +138,7 @@ import NextProject from "../../components/NextProject.astro";
         ))
       }
 
-      <a
-        href="#"
-        class="next-project"
-        id="random-next"
-      >
-        Random Project
-      </a>
-
-      <script>
-        const projects = [
-  "/projects/technofossilarchive",
-  "/projects/encounters",
-  "/projects/disassembly",
-  "/projects/architecture-complexity-mapping",
-  "/projects/revolve",
-  "/projects/africaya-renovation"
-];
-
-        const current = window.location.pathname.replace(/\/$/, "");
-
-        const filtered = projects.filter(
-          (p) => p !== current
-        );
-
-        const random = filtered[
-          Math.floor(Math.random() * filtered.length)
-        ];
-
-        const link = document.getElementById("random-next");
-
-        if (link) {
-          link.setAttribute("href", random);
-        }
-      </script>
+      <NextProject />
     </main>
 
     <Footer />
