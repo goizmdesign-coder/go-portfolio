@@ -2,6 +2,7 @@
 import "../../styles/global.css";
 import Header from "../../components/Header.astro";
 import Footer from "../../components/Footer.astro";
+import NextProject from "../../components/NextProject.astro";
 ---
 
 <html lang="en">
@@ -136,42 +137,7 @@ import Footer from "../../components/Footer.astro";
         src="/images/revolve-mov.gif"
         alt="R/EVOLVE animation — Go Izumita"
       />
-      <a
-  href="#"
-  class="next-project"
-  id="random-next"
->
-  Random Project
-</a>
-
-<script>
-  const projects = [
-          "/projects/disassembly",
-          "/projects/encounters",
-          "/projects/architecture-complexity-mapping",
-          "/projects/revolve",
-          "/projects/africaya-renovation"
-        ];
-
-  const current =
-    window.location.pathname;
-
-  const filtered =
-    projects.filter(
-      (p) => p !== current
-    );
-
-  const random =
-    filtered[
-      Math.floor(
-        Math.random() * filtered.length
-      )
-    ];
-
-  document
-    .getElementById("random-next")
-    .href = random;
-</script>
+      <NextProject />
     </main>
     <Footer />
   </body>

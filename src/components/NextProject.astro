@@ -1,0 +1,34 @@
+
+---
+const projects = [
+  "technofossilarchive",
+  "encounters",
+  "disassembly",
+  "architecture-complexity-mapping",
+  "revolve",
+  "africaya-renovation"
+];
+
+// 現在のページを取得
+const pathname = Astro.url.pathname.replace(/\/$/, "");
+const currentSlug = pathname.split("/").pop();
+
+// 日本語版・英語版を判別
+const isJapanese = pathname.startsWith("/jp/");
+const basePath = isJapanese
+  ? "/jp/projects"
+  : "/projects";
+
+// 現在の作品の位置を取得
+const currentIndex = projects.indexOf(currentSlug);
+
+// 次の作品を取得（最後なら最初に戻る）
+const nextIndex = (currentIndex + 1) % projects.length;
+const nextProject = projects[nextIndex];
+
+const nextHref = `${basePath}/${nextProject}`;
+---
+
+<a href={nextHref} class="next-project">
+  Next Project
+</a>

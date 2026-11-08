@@ -5,6 +5,9 @@ import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 ---
 
+
+
+
 <html lang="en">
   <head>
     <meta charset="utf-8" />
@@ -272,38 +275,6 @@ import Footer from "../components/Footer.astro";
         </a>
       </p>
 
-      <a
-        href="#"
-        class="next-project"
-        id="random-next"
-      >
-        Next Project
-      </a>
-
-      <script>
-        const projects = [
-          "/projects/disassembly",
-          "/projects/encounters",
-          "/projects/architecture-complexity-mapping",
-          "/projects/revolve"
-        ];
-
-        const current = window.location.pathname;
-
-        const filtered = projects.filter(
-          (p) => p !== current
-        );
-
-        const nextLink = document.getElementById("random-next");
-
-        if (nextLink instanceof HTMLAnchorElement && filtered.length > 0) {
-          const random = filtered[
-            Math.floor(Math.random() * filtered.length)
-          ];
-
-          nextLink.href = random;
-        }
-      </script>
 
     </main>
 

@@ -1,0 +1,127 @@
+
+---
+import "../../../styles/global.css";
+import Header from "../../../components/Header.astro";
+import Footer from "../../../components/Footer.astro";
+import NextProject from "../../../components/NextProject.astro";
+---
+
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+
+    <title>
+      Technofossil Archive — Go Izumita / 泉田剛
+    </title>
+
+    <meta
+      name="description"
+      content="現代社会で役目を終えた人工物や建築廃材を、未来に発掘される産業化石として捉え直すリサーチ・デザインプロジェクト。"
+    />
+
+    <meta
+      property="og:title"
+      content="Technofossil Archive — Go Izumita / 泉田剛"
+    />
+
+    <meta
+      property="og:description"
+      content="Research, Sculpture and Installation Project"
+    />
+
+    <meta
+      property="og:type"
+      content="website"
+    />
+
+    <meta
+      property="og:url"
+      content="https://goizumita.com/jp/projects/technofossil-archive"
+    />
+
+    <link rel="icon" href="/favicon.ico" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="48x48"
+      href="/favicon.png"
+    />
+  </head>
+
+  <body>
+    <Header />
+
+    <main>
+      <h1>
+        Technofossil Archive
+      </h1>
+
+      <p>
+        Technofossil Archiveは、現代社会で役目を終えた人工物や建築廃材を、未来に発掘される「テクノフォッシル（産業化石）」として捉え直すリサーチ・デザインプロジェクト。
+      </p>
+
+      <p>
+        池部ヒロトによるオーストリア・ハルシュタットでのフィールドリサーチや、泉田剛による建築の解体を通じた実践を出発点に、廃棄される物質を採集・加工・保存することで、人工物の価値や時間の捉え方を問い直す。
+      </p>
+
+      <p>
+        本作品の中心となるのは、物体を「包む」という行為。素材に短い繊維を付着させるフロッキー加工によって、物体の輪郭を残しながら新たな表皮を与え、保存と変容を同時に行う。この工程を、地層が物質を覆い、長い時間のなかで保存していく堆積の作用になぞらえ、写真やリサーチマップとともに、展示空間全体を未来の発掘現場として構成した。
+      </p>
+
+      <p>
+        Members / Credits
+      </p>
+
+      <p>
+        池部ヒロト｜クリエイティブディレクション、CMFデザイン、立体作品制作、リサーチ
+      <br />
+        泉田剛｜展示空間設計、什器制作、立体作品制作、リサーチ
+      <br />
+        矢澤飛鳥｜写真作品制作、サイアノタイプ、プロジェクト記録撮影
+      <br />
+        有本怜生｜アートディレクション、グラフィック・エディトリアルデザイン
+      </p>
+
+      <p>
+        伸栄プラスチック｜フロッキー加工
+      </p>
+
+      <p>
+        Exhibition
+      </p>
+
+      <p>
+        alter. 2026, Tokyo<br />
+        2026.10.29–11.01<br />
+        日本橋三井ホール、東京
+      </p>
+
+      <p>
+       Photo by Asuka Yazawa
+      </p>
+
+      
+      {
+        Array.from({ length: 58 }, (_, i) => i + 1).map((num) => (
+          <img
+            src={`/images/TFA-${num}.jpg`}
+            alt={`Technofossil Archive — Photo ${num}`}
+            loading={num === 1 ? "eager" : "lazy"}
+            decoding="async"
+          />
+        ))
+      }
+
+
+      <NextProject />
+    </main>
+
+    <Footer />
+  </body>
+</html>

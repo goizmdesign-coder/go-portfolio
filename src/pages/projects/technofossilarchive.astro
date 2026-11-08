@@ -1,0 +1,179 @@
+
+---
+import "../../styles/global.css";
+import Header from "../../components/Header.astro";
+import Footer from "../../components/Footer.astro";
+import NextProject from "../../components/NextProject.astro";
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+
+    <title>
+      Technofossil Archive — Go Izumita / 泉田剛
+    </title>
+
+    <meta
+      name="description"
+      content="Technofossil Archive is a research and design project that reimagines discarded artifacts and architectural materials as technofossils of the future."
+    />
+
+    <meta
+      property="og:title"
+      content="Technofossil Archive — Go Izumita / 泉田剛"
+    />
+
+    <meta
+      property="og:description"
+      content="Research, Sculpture and Installation Project"
+    />
+
+    <meta
+      property="og:type"
+      content="website"
+    />
+
+    <meta
+      property="og:url"
+      content="https://goizumita.com/projects/technofossilarchive"
+    />
+
+    <link rel="icon" href="/favicon.ico" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="48x48"
+      href="/favicon.png"
+    />
+  </head>
+
+  <body>
+    <Header />
+
+    <main>
+      <h1>
+        Technofossil Archive
+      </h1>
+
+      <p>
+        Technofossil Archive is a research and design project
+        that reimagines discarded artifacts and architectural
+        materials as "technofossils" — industrial fossils
+        that may be excavated in the distant future.
+      </p>
+
+      <p>
+        The project draws on Hiroto Ikebe's field research
+        in Hallstatt, Austria, and Go Izumita's practice
+        of architectural disassembly and reconstruction.
+        Through the collection, transformation, and preservation
+        of discarded materials, it questions how we perceive
+        the value of artifacts and their relationship to time.
+      </p>
+
+      <p>
+        At the core of the project is the act of "wrapping."
+        Through flocking, a process in which short fibers
+        are applied to a surface, objects are given a new skin
+        while retaining their original forms, allowing
+        preservation and transformation to occur simultaneously.
+        This process echoes the way geological strata envelop
+        and preserve matter over time.
+        Together with photographs and research maps,
+        the exhibition space was conceived as an excavation
+        site from the future.
+      </p>
+
+      <p>
+        Members / Credits
+      </p>
+
+      <p>
+        Hiroto Ikebe | Creative Direction, CMF Design,
+        Sculptural Fabrication, Research
+        <br />
+        Go Izumita | Exhibition Design, Display Fixture
+        Fabrication, Sculptural Fabrication, Research
+        <br />
+        Asuka Yazawa | Photographic Works, Cyanotype,
+        Project Documentation Photography
+        <br />
+        Leo Arimoto | Art Direction,
+        Graphic and Editorial Design
+      </p>
+
+      <p>
+        Shinei Plastic | Flocking
+      </p>
+
+      <p>
+        Exhibition
+      </p>
+
+      <p>
+        alter. 2026, Tokyo<br />
+        October 29 – November 1, 2026<br />
+        Nihonbashi Mitsui Hall, Tokyo
+      </p>
+
+      <p>
+        Photo by Asuka Yazawa
+      </p>
+
+      {
+        Array.from({ length: 58 }, (_, i) => i + 1).map((num) => (
+          <img
+            src={`/images/TFA-${num}.jpg`}
+            alt={`Technofossil Archive — Photo ${num}`}
+            loading={num === 1 ? "eager" : "lazy"}
+            decoding="async"
+          />
+        ))
+      }
+
+      <a
+        href="#"
+        class="next-project"
+        id="random-next"
+      >
+        Random Project
+      </a>
+
+      <script>
+        const projects = [
+  "/projects/technofossilarchive",
+  "/projects/encounters",
+  "/projects/disassembly",
+  "/projects/architecture-complexity-mapping",
+  "/projects/revolve",
+  "/projects/africaya-renovation"
+];
+
+        const current = window.location.pathname.replace(/\/$/, "");
+
+        const filtered = projects.filter(
+          (p) => p !== current
+        );
+
+        const random = filtered[
+          Math.floor(Math.random() * filtered.length)
+        ];
+
+        const link = document.getElementById("random-next");
+
+        if (link) {
+          link.setAttribute("href", random);
+        }
+      </script>
+    </main>
+
+    <Footer />
+  </body>
+</html>

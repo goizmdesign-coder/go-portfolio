@@ -2,6 +2,7 @@
 import "../../../styles/global.css";
 import Header from "../../../components/Header.astro";
 import Footer from "../../../components/Footer.astro";
+import NextProject from "../../../components/NextProject.astro";
 ---
 
 <html lang="ja">
@@ -144,42 +145,7 @@ import Footer from "../../../components/Footer.astro";
         src="/images/toda-12.jpg"
         alt="ENCOUNTERS 2025 installation view"
       />
-      <a
-  href="#"
-  class="next-project"
-  id="random-next"
->
-  Random Project
-</a>
-
-<script>
-  const projects = [
-  "/jp/projects/disassembly",
-  "/jp/projects/encounters",
-  "/jp/projects/architecture-complexity-mapping",
-  "/jp/projects/revolve",
-  "/jp/projects/africaya-renovation"
-];
-
-  const current =
-    window.location.pathname;
-
-  const filtered =
-    projects.filter(
-      (p) => p !== current
-    );
-
-  const random =
-    filtered[
-      Math.floor(
-        Math.random() * filtered.length
-      )
-    ];
-
-  document
-    .getElementById("random-next")
-    .href = random;
-</script>
+      <NextProject />
     </main>
     <Footer />
   </body>
